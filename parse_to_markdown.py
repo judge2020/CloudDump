@@ -13,6 +13,7 @@ for line in open('out.json').readlines():
         # redemption = result["fees"]["redemption_fee"]
         tlds.append((tld, registration))
 
+tlds.sort()
 #
 # MARKDOWN
 #
