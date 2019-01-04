@@ -26,7 +26,7 @@ b = requests.post(f"https://dash.cloudflare.com/api/v4/accounts/{secrets.account
                   json={'id': tlds}, headers=headers)
 
 print(b.text)
-if "icaan_fee" in b.text:
+if "icann_fee" in b.text:
     # success
     with open('out.json', 'a') as file:
         file.write(b.text)
