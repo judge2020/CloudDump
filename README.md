@@ -9,17 +9,19 @@ https://github.com/judge2020/Actual-Domain-Prices
 
 Requirements:
 
-* pipenv
+* pipenv (or manually install the dependencies in [Pipfile]{/Pipfile))
 * python ~3.7
-* Cloudflare account with registrar enabled
+* Cloudflare account
 
-1. run `python scrape_tlds.py` to get all of the TLDs Cloudflare currently supports
-2. copy .env.example to .env and fill out relevant information
-3. go to the CF dashboard and MITM a request
-4. copy the headers (including cookie) to a file called `headers.txt`, in the format of `name: value`
-5. run `python get_prices.py`
+1. copy .env.example to .env and fill out relevant information
+2. go to the CF dashboard and MITM a request
+3. copy the headers (including cookie) to a file called `headers.txt`, in the format of `name: value`
+4. run `scrape_tlds.py` to get all of the TLDs Cloudflare currently supports
+5. run `get_prices.py`
+6. run `export_prices.py`
 
-NOTE: You should split up the `tls.txt` list before running get_prices. Cloudflare sometimes dies with a gateway timeout if you query too many TLDs, so run it twice with different TLDs each time.
+
+The relevant files are `out.md` and `out.txt`.
 
 ##### INFO
 
