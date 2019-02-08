@@ -116,6 +116,5 @@ dmypy.json
 
 cookies.txt
 headers.txt
-out.json
-out.txt
+out.*
 /.idea
