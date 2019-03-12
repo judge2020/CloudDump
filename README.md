@@ -9,7 +9,7 @@ https://github.com/judge2020/Actual-Domain-Prices
 
 Requirements:
 
-* pipenv (or manually install the dependencies in [Pipfile]{/Pipfile))
+* pipenv (or manually install the dependencies in [Pipfile](Pipfile))
 * python ~3.7
 * Cloudflare account
 
