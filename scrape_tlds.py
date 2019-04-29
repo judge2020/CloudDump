@@ -14,5 +14,7 @@ for item in table.descendants:
 
 with open('tlds.txt', 'w')as outfile:
     for tld in tlds:
+        if tld is None:
+            continue
         outfile.write(tld)
         outfile.write("\n")
