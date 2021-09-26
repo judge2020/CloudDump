@@ -1,3 +1,5 @@
+Looks like this doesn't work anymore. Unfortunate.
+
 #### CloudDump
 
 Dumps Cloudflare to get the price of all of their TLD's.
